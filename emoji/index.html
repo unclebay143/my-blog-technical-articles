@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <!-- Custom css -->
+    <link rel="stylesheet" href="./emoji.css" />
+    <title>Emoji</title>
+  </head>
+  <body>
+    <main class="app">
+      <div>
+        <h1>Lookup Emoji</h1>
+        <a
+          href="http://www.unclebigbay.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Visit article
+        </a>
+      </div>
+      <!-- Mode switch -->
+      <section class="mode-switch">
+        <div class="form-check form-switch">
+          <input
+            class="form-check-input shadow-none"
+            type="checkbox"
+            id="mode-switch"
+          />
+          <label class="form-check-label" for="mode-switch"
+            >Toggle Dark Mode</label
+          >
+        </div>
+      </section>
+
+      <!-- Search Box -->
+      <section class="emoji-search-area">
+        <form class="input-group mb-3 shadow-none">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="search-addon">🔍</span>
+          </div>
+          <input
+            type="text"
+            aria-label="Search-emoji"
+            aria-describedby="search-addon"
+            placeholder="Search Emoji"
+            class="emoji-search-box form-control form-control-sm"
+          />
+          <button type="submit" class="btn emoji-search-btn">Find</button>
+        </form>
+      </section>
+      <!-- Emoji Display Area -->
+      <section class="row emoji-display-area"></section>
+    </main>
+    <!-- Javascript -->
+    <script src="./emoji.js"></script>
+  </body>
+</html>

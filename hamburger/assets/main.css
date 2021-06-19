@@ -1,0 +1,40 @@
+/* resetting browser default styles */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* navbar style*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+    background-color: #845EC2;
+}
+
+/* navbar brand style */
+nav .brand{
+    font-size: 30px;
+    text-decoration: none;
+    color: #F9F871;
+}
+
+/* hamburger style */
+nav .hamburger{
+    /* the tricks */
+    position: relative;
+    transform: rotate(90deg);
+
+    /* optional */
+    font-size: 3rem;
+    cursor: pointer;
+    padding: 10px 6px;
+    font-weight: 900;
+    color: #F9F871;
+}
+/* hamburger hover style */
+nav .hamburger:hover {
+    color: #FFC75F;
+}

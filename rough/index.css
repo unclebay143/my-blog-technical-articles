@@ -1,0 +1,123 @@
+.circle-list{
+    /* list-style: none; */
+    counter-reset: list-counter;
+}
+
+.circle-list li{
+    margin: 1.5rem 0;    
+}
+.circle-list li::before{
+    counter-increment: list-counter;
+    content: counter(list-counter);
+    display: inline-block;
+    font-weight: bold;
+    /* border-radius: 50%; */
+
+    width: 1rem;
+    height: 1rem;
+    padding: .5em;
+    margin-right: 1rem; 
+
+    color: #000;
+    border: .25rem solid #2696E8;
+    font-family: monospace;
+    text-align: center;
+
+    
+    
+}
+
+.square{
+    counter-reset: list-counter;
+    list-style: none;
+    float:left;
+}
+.square li{
+    margin: 1.5em 0;    
+}
+.square li:before{
+    content: counter(list-counter);
+    counter-increment: list-counter;
+    width: 1rem;
+    height: 1rem;
+    padding: .5rem;
+    margin-right: 1rem;
+    border: .25em solid #555;
+    background: #2696E8;
+    color: #fff;
+    font-family: arial;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    
+}
+
+.diamond{
+    counter-reset: list-counter;
+    list-style: none;
+    float:left;
+}
+.diamond li{
+    margin: 1.5em 0;    
+}
+.diamond li:before{
+    content: counter(list-counter);
+    counter-increment: list-counter;
+   
+    width: 1rem;
+    height: 1rem;
+    padding: .5rem;
+    margin-right: 1rem;
+    border: .25em solid #555;
+    background: #2696E8;
+    color: #fff;
+    font-family: arial;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    
+}
+
+.large{
+    counter-reset: list-counter;
+    list-style: none;
+    float:left;
+}
+.large li{
+     margin: 1.5em 0;
+    line-height: 1em
+}
+.large li:before{
+    content: counter(list-counter);
+    counter-increment: list-counter;
+    font-family: arial;
+    color:#666;
+    font: bold;
+    font-size: 2rem;
+    margin-right: .5rem;
+}
+.oval{
+    counter-reset: list-counter;
+    list-style: none;
+    float:left;
+}
+.oval li{
+    margin: 1.5em 0;    
+}
+.oval li:before{
+    content: counter(list-counter);
+    counter-increment: list-counter;
+    width: .5rem;
+    height: 1rem;
+    padding: .5rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+    border: .25em solid #555;
+    background: #2696E8;
+    color: #fff;
+    font-family: arial;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    
+}
