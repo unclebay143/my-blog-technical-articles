@@ -20,7 +20,7 @@
 }
 
 main .content {
-  max-width: 70%;
+  max-width: 80%;
 }
 
 .mode-switch {
@@ -58,4 +58,10 @@ main .content {
 
 .dark .article-sub--heading {
   font-weight: 700;
+}
+
+@media (min-width: 900px) {
+  main .content {
+    max-width: 70%;
+  }
 }
