@@ -15,9 +15,10 @@
 }
 
 .header a {
-  color: #fdfdfd;
+  color: wheat;
 }
-.preview-links {
+.header a:hover {
+  opacity: 0.8;
 }
 
 .preview-links a {
